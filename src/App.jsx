@@ -7,10 +7,11 @@ import Features from './sections/Features'
 import Projects from './sections/Projects'
 import Contact from './sections/Contact'
 import Footer from './components/Footer'
+import FloatingButtons from './components/FloatingButtons' 
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative">
       <ProgressBar />
       <NavBar />
       <main>
@@ -22,6 +23,7 @@ function App() {
       </main>
       <Footer />
       <ScrollTop />
+      <FloatingButtons /> 
     </div>
   )
 }
