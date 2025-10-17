@@ -4,14 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- 🔥 Đổi tiêu đề hiển thị khi chia sẻ hoặc tìm kiếm -->
+    <!-- 🔥 Tiêu đề & mô tả SEO -->
     <title>Ép Biển Số Gia Bảo – Bền đẹp & Chuẩn quốc tế CE</title>
-
-    <!-- 🔍 Mô tả trang (hiện khi chia sẻ link, SEO) -->
     <meta
       name="description"
       content="Ép Biển Số Gia Bảo chuyên ép biển số ô tô & xe máy cao cấp – sang trọng, bền đẹp, chuẩn quốc tế CE. Địa chỉ: 121 Trần Huy Liệu, Phú Nhuận, TP.HCM."
     />
+
+    <!-- ✅ Favicon hiển thị trên Google & tab trình duyệt -->
+    <link rel="icon" href="/logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+
+    <!-- ✅ Dữ liệu cấu trúc giúp Google hiểu logo thương hiệu -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Ép Biển Số Gia Bảo",
+        "url": "https://epbiensogiabao.com",
+        "logo": "https://epbiensogiabao.com/logo.png"
+      }
+    </script>
 
     <!-- 🧭 Open Graph (Facebook, Zalo, Messenger hiển thị) -->
     <meta property="og:title" content="Ép Biển Số Gia Bảo" />
@@ -21,14 +34,15 @@
     />
     <meta
       property="og:image"
-      content="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1600&q=80"
+      content="https://epbiensogiabao.com/logo.png"
     />
-    <meta property="og:url" content="https://ep-bien-so-gia-bao.onrender.com" />
+    <meta property="og:url" content="https://epbiensogiabao.com" />
     <meta property="og:type" content="website" />
 
     <!-- 🐦 Twitter (tùy chọn) -->
     <meta name="twitter:card" content="summary_large_image" />
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
