@@ -86,6 +86,13 @@ export default function Hero() {
             <Store className="w-5 h-5" />
             <span>Xem cửa hàng</span>
           </Link>
+          {/* 📰 Tin tức mới nhất */}
+          <Link
+            to="/tin-tuc"
+            className="border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black font-semibold px-8 py-3 rounded-lg transition-transform hover:scale-105"
+          >
+            Tin tức mới nhất
+          </Link>
         </div>
       </div>
 
@@ -94,10 +101,6 @@ export default function Hero() {
         <div className="flex items-center gap-2">
           <Shield className="w-5 h-5 text-yellow-400" />
           <span>Bảo hành 12 tháng</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <Award className="w-5 h-5 text-yellow-400" />
-          <span>Chứng nhận CE quốc tế</span>
         </div>
         <div className="flex items-center gap-2">
           <Star className="w-5 h-5 text-yellow-400" />

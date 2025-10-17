@@ -103,8 +103,6 @@ export default function Location() {
           </div>
         </Container>
       </section>
-
-      <Footer />
     </div>
   )
 }
