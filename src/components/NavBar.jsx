@@ -6,7 +6,7 @@ export default function NavBar() {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
 
-  // Danh sách link điều hướng
+  // 🔗 Các section trong trang Home
   const links = [
     { href: "#about", label: "Giới thiệu" },
     { href: "#features", label: "Ưu điểm" },
@@ -14,16 +14,22 @@ export default function NavBar() {
     { href: "#contact", label: "Liên hệ" },
   ];
 
-  // 👉 Hàm xử lý khi bấm vào menu
+  // 🔗 Các trang riêng biệt
+  const pageLinks = [
+    { to: "/dich-vu", label: "Dịch vụ" },
+    { to: "/tin-tuc", label: "Tin tức" },
+  ];
+
+  // 🧭 Khi bấm vào section trong Home
   const handleNavClick = (id) => {
-    navigate("/"); // luôn quay về Home trước
+    navigate("/"); // quay về Home
     setOpen(false);
     setTimeout(() => {
       const section = document.querySelector(id);
       if (section) {
         section.scrollIntoView({ behavior: "smooth" });
       }
-    }, 400); // đợi 0.4s để trang Home load rồi mới cuộn
+    }, 400); // đợi Home load rồi mới cuộn
   };
 
   return (
@@ -38,8 +44,9 @@ export default function NavBar() {
           BIỂN SỐ<span className="text-white"> GIA BẢO</span>
         </Link>
 
-        {/* 🖥️ Menu desktop */}
+        {/* 🖥️ Menu Desktop */}
         <div className="hidden md:flex gap-10 items-center">
+          {/* Các section trong Home */}
           {links.map((link) => (
             <button
               key={link.href}
@@ -51,9 +58,22 @@ export default function NavBar() {
             </button>
           ))}
 
+          {/* Các trang riêng */}
+          {pageLinks.map((page) => (
+            <Link
+              key={page.to}
+              to={page.to}
+              onClick={() => setOpen(false)}
+              className="relative text-yellow-300 hover:text-white text-lg font-medium transition group"
+            >
+              {page.label}
+              <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-gradient-to-r from-yellow-400 to-orange-500 transition-all duration-300 group-hover:w-full" />
+            </Link>
+          ))}
+
           {/* 🌐 Facebook */}
           <a
-            href="https://facebook.com/yourprofile" // 🔗 sửa link FB tại đây
+            href="https://facebook.com/yourprofile" // 🔗 đổi link Facebook thật ở đây
             target="_blank"
             rel="noopener noreferrer"
             className="ml-6 text-yellow-300 hover:text-yellow-400 hover:scale-110 transition-transform duration-300"
@@ -75,13 +95,14 @@ export default function NavBar() {
         </button>
       </div>
 
-      {/* 📱 Dropdown menu mobile */}
+      {/* 📱 Dropdown Mobile */}
       <div
         className={`md:hidden bg-black/90 backdrop-blur-xl transition-all duration-500 overflow-hidden ${
           open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <div className="flex flex-col items-center py-4 space-y-4">
+          {/* Các section trong Home */}
           {links.map((link) => (
             <button
               key={link.href}
@@ -92,7 +113,19 @@ export default function NavBar() {
             </button>
           ))}
 
-          {/* 🌐 Facebook mobile */}
+          {/* Các trang riêng */}
+          {pageLinks.map((page) => (
+            <Link
+              key={page.to}
+              to={page.to}
+              onClick={() => setOpen(false)}
+              className="text-yellow-300 hover:text-white text-lg font-semibold tracking-wide transition"
+            >
+              {page.label}
+            </Link>
+          ))}
+
+          {/* 🌐 Facebook trên Mobile */}
           <a
             href="https://facebook.com/yourprofile"
             target="_blank"

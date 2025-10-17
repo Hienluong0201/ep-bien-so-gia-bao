@@ -14,6 +14,7 @@ import FloatingButtons from "./components/FloatingButtons";
 import Blog from "./pages/Blog";
 import Location from "./pages/Location";
 import BlogDetail from "./pages/BlogDetail";
+import Services from "./pages/Services";
 function App() {
   return (
     <Router>
@@ -43,6 +44,9 @@ function App() {
 
           {/* Trang Địa chỉ */}
           <Route path="/location" element={<Location />} />
+
+            {/* Trang dịch vụ */}
+          <Route path="/dich-vu" element={<Services />} />
         </Routes>
 
         <Footer />
