@@ -10,10 +10,20 @@ export default function Location() {
       {/* Ảnh nền hero to full màn hình */}
       <div className="relative w-full h-[100vh]">
       <img
-        src="/img/cuahang.jpg"
-        alt="Cửa hàng Ép Biển Số Gia Bảo"
-        className="absolute inset-0 w-full h-full object-cover brightness-75"
-      />
+      src="/img/cuahang.jpg"
+      alt="Cửa hàng Ép Biển Số Gia Bảo"
+      className="absolute inset-0 w-full h-full object-cover brightness-75"
+    />
+        <div className="absolute top-6 left-6 z-10">
+          <Link
+            to="/"
+            className="inline-flex items-center gap-2 bg-white/80 text-gray-800 px-4 py-2 rounded-lg font-medium hover:bg-white transition shadow-md"
+          >
+            <ArrowLeft className="w-5 h-5" />
+            Quay lại trang chủ
+          </Link>
+        </div>
+
         {/* Tiêu đề nằm giữa ảnh */}
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4">
           <h1 className="text-5xl font-bold mb-4 drop-shadow-lg">
