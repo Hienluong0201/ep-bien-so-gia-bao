@@ -8,7 +8,6 @@ export default function NavBar() {
 
   // 🔗 Các section trong trang Home
   const links = [
-    { href: "#about", label: "Giới thiệu" },
     { href: "#features", label: "Ưu điểm" },
     { href: "#projects", label: "Bộ sưu tập" },
     { href: "#contact", label: "Liên hệ" },

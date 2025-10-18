@@ -80,6 +80,63 @@ export default function Services() {
             Nhận báo giá
           </a>
         </div>
+        <div className="bg-gray-900/80 border border-yellow-500/30 rounded-2xl p-8 shadow-[0_0_25px_rgba(255,215,0,0.15)] hover:shadow-[0_0_35px_rgba(255,215,0,0.35)] transition-all duration-500">
+          <Star className="w-12 h-12 text-yellow-400 mb-4" />
+          <h2 className="text-2xl font-semibold text-yellow-400 mb-3">
+            Gói VIP Cao Cấp
+          </h2>
+          <p className="text-gray-300 mb-4 leading-relaxed">
+            Ép biển số tráng gương, viền titan, chống nước tuyệt đối. Dành cho
+            khách hàng yêu thích sự khác biệt và độ bền tối đa.
+          </p>
+          <p className="text-yellow-300 font-bold text-xl mb-6">Từ 500.000đ</p>
+          <a
+            href="https://zalo.me/0972555038"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg transition-transform hover:scale-105 shadow-[0_0_15px_rgba(255,215,0,0.4)]"
+          >
+            Nhận báo giá
+          </a>
+        </div>
+        <div className="bg-gray-900/80 border border-yellow-500/30 rounded-2xl p-8 shadow-[0_0_25px_rgba(255,215,0,0.15)] hover:shadow-[0_0_35px_rgba(255,215,0,0.35)] transition-all duration-500">
+          <Star className="w-12 h-12 text-yellow-400 mb-4" />
+          <h2 className="text-2xl font-semibold text-yellow-400 mb-3">
+            Gói VIP Cao Cấp
+          </h2>
+          <p className="text-gray-300 mb-4 leading-relaxed">
+            Ép biển số tráng gương, viền titan, chống nước tuyệt đối. Dành cho
+            khách hàng yêu thích sự khác biệt và độ bền tối đa.
+          </p>
+          <p className="text-yellow-300 font-bold text-xl mb-6">Từ 500.000đ</p>
+          <a
+            href="https://zalo.me/0972555038"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg transition-transform hover:scale-105 shadow-[0_0_15px_rgba(255,215,0,0.4)]"
+          >
+            Nhận báo giá
+          </a>
+        </div>
+        <div className="bg-gray-900/80 border border-yellow-500/30 rounded-2xl p-8 shadow-[0_0_25px_rgba(255,215,0,0.15)] hover:shadow-[0_0_35px_rgba(255,215,0,0.35)] transition-all duration-500">
+          <Star className="w-12 h-12 text-yellow-400 mb-4" />
+          <h2 className="text-2xl font-semibold text-yellow-400 mb-3">
+            Gói VIP Cao Cấp
+          </h2>
+          <p className="text-gray-300 mb-4 leading-relaxed">
+            Ép biển số tráng gương, viền titan, chống nước tuyệt đối. Dành cho
+            khách hàng yêu thích sự khác biệt và độ bền tối đa.
+          </p>
+          <p className="text-yellow-300 font-bold text-xl mb-6">Từ 500.000đ</p>
+          <a
+            href="https://zalo.me/0972555038"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg transition-transform hover:scale-105 shadow-[0_0_15px_rgba(255,215,0,0.4)]"
+          >
+            Nhận báo giá
+          </a>
+        </div>
       </section>
 
       {/* 🌟 Ưu điểm */}
@@ -88,10 +145,10 @@ export default function Services() {
           Vì sao chọn Ép Biển Số Gia Bảo?
         </h2>
         <ul className="text-gray-300 space-y-3 text-lg">
-          <li>✅ Công nghệ ép chân không tiêu chuẩn Đức</li>
-          <li>✅ Chất liệu mica & viền nhôm cao cấp – bền đẹp 5+ năm</li>
-          <li>✅ Bảo hành 12 tháng – lỗi 1 đổi 1</li>
-          <li>✅ Đội ngũ kỹ thuật tay nghề cao – phục vụ tận tâm</li>
+          <li>Công nghệ ép chân không tiêu chuẩn Đức</li>
+          <li>Chất liệu mica & viền nhôm cao cấp – bền đẹp 5+ năm</li>
+          <li>Bảo hành 12 tháng – lỗi 1 đổi 1</li>
+          <li>Đội ngũ kỹ thuật tay nghề cao – phục vụ tận tâm</li>
         </ul>
         <div className="mt-10">
           <Link

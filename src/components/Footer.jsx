@@ -40,10 +40,26 @@ export default function Footer() {
             Ép Biển Số Gia Bảo – Dịch vụ ép biển số ô tô & xe máy cao cấp, sử dụng công nghệ ép nhiệt chuẩn CE Châu Âu.  
             Giao hàng toàn quốc • Chất lượng – Uy tín – Đẳng cấp.
           </p>
+
+          {/* 👁 Bộ đếm lượt truy cập */}
+          <div className="mt-8 flex flex-col items-center gap-2">
+            <span className="text-yellow-400 text-sm font-medium">
+              👁 Tổng lượt truy cập
+            </span>
+            <img
+              src="https://hitwebcounter.com/counter/counter.php?page=21449238&style=0027&nbdigits=5&type=page&initCount=1000"
+              alt="Visitor Counter"
+              className="rounded-md shadow-[0_0_20px_rgba(255,215,0,0.3)]"
+            />
+            <p className="text-xs text-neutral-500 mt-2">
+              Cảm ơn hơn <span className="text-yellow-400 font-semibold">10.000+</span> khách hàng đã tin tưởng dịch vụ Gia Bảo.
+            </p>
+          </div>
         </Container>
       </div>
-       {/* 🗺️ Google Maps hiển thị trực tiếp */}
-      <div className="relative w-full h-[350px] md:h-[400px] overflow-hidden border-b border-neutral-700">
+
+      {/* 🗺️ Google Maps hiển thị trực tiếp */}
+      <div className="relative w-full h-[350px] md:h-[400px] overflow-hidden border-t border-neutral-700">
         <iframe
           title="Bản đồ cửa hàng Ép Biển Số Gia Bảo"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2012039377165!2d106.67602167480343!3d10.795659989345708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d3b7dfae07%3A0x8b6b9a5b34e144d2!2zMTIxIMSQLiBUcuG6p24gSHV5IExp4buHdSwgUGjDuiBOaHXhuqVuLCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1697026664778!5m2!1svi!2s"
