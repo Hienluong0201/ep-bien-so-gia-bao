@@ -4,74 +4,74 @@ import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 
 // ✅ Import 10 ảnh khác nhau
-import bo1 from "../../img/bo1.jpg";
-import bo2 from "../../img/bo3.jpg";
-import bo3 from "../../img/bo1.jpg";
-import bo4 from "../../img/bo3.jpg";
-import bo5 from "../../img/bo1.jpg";
-import bo6 from "../../img/bo3.jpg";
-import bo7 from "../../img/bo1.jpg";
-import bo8 from "../../img/bo3.jpg";
-import bo9 from "../../img/bo1.jpg";
+import bo1 from "../../img/anh3.jpg";
+import bo2 from "../../img/anh8.jpg";
+import bo3 from "../../img/anh4.jpg";
+import bo4 from "../../img/anh5.jpg";
+import bo5 from "../../img/anh6.jpg";
+import bo6 from "../../img/anh9.jpg";
+import bo7 from "../../img/anh10.jpg";
+import bo8 from "../../img/anh11.jpg";
+import bo9 from "../../img/anh12.jpg";
 import bo10 from "../../img/bo3.jpg";
 
 export default function Projects() {
   const plates = [
-    {
-      title: "Mẫu Ép Biển Số Ô Tô Cao Cấp",
-      image: bo1,
-      description:
-        "Công nghệ ép nhiệt tiên tiến – phẳng tuyệt đối, bền màu, sang trọng và tinh tế.",
-    },
-    {
-      title: "Ép Biển Số Xe Máy Gia Bảo",
-      image: bo2,
-      description:
-        "Thiết kế chuẩn form, ép khít, bảo vệ biển số xe khỏi va đập và thời tiết.",
-    },
-    {
-      title: "Phiên Bản Phản Quang Chuẩn CE",
-      image: bo3,
-      description:
-        "Phản quang sáng rõ, đạt tiêu chuẩn châu Âu CE – nổi bật cả ngày lẫn đêm.",
-    },
-    {
-      title: "Ép Biển Số Ô Tô 4 Chỗ",
-      image: bo4,
-      description:
-        "Ép chuẩn, bền màu, giữ nguyên độ phản quang và thẩm mỹ cao cấp.",
-    },
-    {
-      title: "Ép Biển Số Xe Tải & Xe Khách",
-      image: bo5,
-      description:
-        "Phù hợp kích thước lớn, bề mặt sáng bóng, chống rỉ sét và phồng rộp.",
-    },
-    {
-      title: "Ép Biển Số Màu Vàng Xe Kinh Doanh",
-      image: bo6,
-      description:
-        "Công nghệ ép hiện đại – giữ màu vàng tươi, không bong tróc theo thời gian.",
-    },
-    {
-      title: "Biển Số Inox Phản Quang Cao Cấp",
-      image: bo7,
-      description:
-        "Chất liệu inox sáng bóng – bền vượt thời gian, phản quang cực mạnh.",
-    },
-    {
-      title: "Ép Biển Số Theo Yêu Cầu",
-      image: bo8,
-      description:
-        "Nhận thiết kế theo mẫu riêng, phù hợp phong cách từng dòng xe.",
-    },
-    {
-      title: "Biển Số Ô Tô Sang Trọng",
-      image: bo9,
-      description:
-        "Kết hợp công nghệ ép thủy lực và phản quang – sang trọng, đẳng cấp.",
-    },
-  ];
+  {
+    title: "Mẫu Ép Biển Số Ô Tô Ngoại Giao Cao Cấp",
+    image: bo1,
+    description:
+      "Biển số nền trắng chữ đỏ dành cho xe ngoại giao – ép thủy lực phản quang, sắc nét, bền màu và chống nước tuyệt đối.",
+  },
+  {
+    title: "Ép Biển Số xe máy ",
+    image: bo2,
+    description:
+      "Biển số trắng, vàng, đỏ – ép chuẩn khuôn, bề mặt sáng bóng, giữ màu bền lâu, phù hợp mọi loại xe từ 4 chỗ đến xe tải, xe kinh doanh.",
+  },
+  {
+    title: "Phiên Bản Biển Số Phản Quang Cao Cấp",
+    image: bo3,
+    description:
+      "Phản quang sáng rõ, nhìn nổi bật cả ngày lẫn đêm – ép chuẩn, không phồng rộp, chống trầy xước.",
+  },
+  {
+    title: "Ép Biển Số Ô Tô 4 Chỗ Sang Trọng",
+    image: bo4,
+    description:
+      "Ép chuẩn thủy lực, bền màu, giữ nguyên độ phản quang và viền sắc nét – đậm chất cao cấp.",
+  },
+  {
+    title: "Ép Biển Số Xe Tải & Xe Khách Bền Bỉ",
+    image: bo5,
+    description:
+      "Kích thước lớn, ép chắc chắn, bề mặt sáng bóng – chống rỉ sét, bong tróc và chịu thời tiết khắc nghiệt.",
+  },
+  {
+    title: "Biển Số Màu",
+    image: bo6,
+    description:
+      "Màu vàng tươi đặc trưng, ép thủy lực bền bỉ – không bong, không phai, phù hợp xe dịch vụ và taxi.",
+  },
+  {
+    title: "Biển Số Inox Phản Quang Siêu Bền",
+    image: bo7,
+    description:
+      "Chất liệu inox sáng bóng – bền vượt thời gian, phản quang cực mạnh, tạo điểm nhấn đẳng cấp.",
+  },
+  {
+    title: "Ép Biển Số Theo Yêu Cầu Riêng",
+    image: bo8,
+    description:
+      "Nhận thiết kế tùy chọn: viền, màu, quốc kỳ... phù hợp phong cách và cá tính từng dòng xe.",
+  },
+  {
+    title: "Bộ Sưu Tập Biển Số Ô Tô Sang Trọng",
+    image: bo9,
+    description:
+      "Kết hợp công nghệ ép thủy lực và phản quang – tạo độ sáng hoàn hảo, sang trọng và nổi bật.",
+  },
+];
 
   return (
     <section

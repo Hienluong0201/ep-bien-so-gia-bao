@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Store, Newspaper, MessageCircle, Image } from "lucide-react";
 import { Link } from "react-router-dom";
 import img1 from "../../img/backgout1.jpg";
-import img2 from "../../img/backggrout2.jpg";
+import img2 from "../../img/anh2.png";
 import img3 from "../../img/cuahang4.jpg";
 
 const images = [img1, img2, img3];
