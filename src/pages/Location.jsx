@@ -9,12 +9,11 @@ export default function Location() {
     <div className="min-h-screen bg-white">
       {/* Ảnh nền hero to full màn hình */}
       <div className="relative w-full h-[100vh]">
-        <img
-          src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1600&q=80"
-          alt="Cửa hàng Ép Biển Số Gia Bảo"
-          className="absolute inset-0 w-full h-full object-cover brightness-75"
-        />
-
+      <img
+        src="/img/cuahang.jpg"
+        alt="Cửa hàng Ép Biển Số Gia Bảo"
+        className="absolute inset-0 w-full h-full object-cover brightness-75"
+      />
         {/* Nút quay lại */}
         <div className="absolute top-6 left-6 z-10">
           <Link

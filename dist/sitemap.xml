@@ -1,11 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+  <!-- Trang chủ -->
   <url>
     <loc>https://epbiensogiabao.com/</loc>
     <priority>1.0</priority>
+    <changefreq>daily</changefreq>
   </url>
+
+  <!-- Trang dịch vụ -->
+  <url>
+    <loc>https://epbiensogiabao.com/dich-vu</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Trang cửa hàng -->
   <url>
     <loc>https://epbiensogiabao.com/location</loc>
     <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Trang tin tức -->
+  <url>
+    <loc>https://epbiensogiabao.com/tin-tuc</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Bài viết trong trang tin tức -->
+  <url>
+    <loc>https://epbiensogiabao.com/tin-tuc/ep-bien-so-mica</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://epbiensogiabao.com/tin-tuc/mica-kem-chat-luong</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
   </url>
 </urlset>

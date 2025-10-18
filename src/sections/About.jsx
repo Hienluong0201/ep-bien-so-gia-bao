@@ -12,7 +12,7 @@ export default function About() {
         <SectionHeader
           kicker="Giới thiệu"
           title="Về Ép Biển Số Gia Bảo"
-          subtitle="Chuyên ép biển số cao cấp – bền đẹp – chuẩn quốc tế CE."
+          subtitle="Chuyên ép biển số cao cấp – bền đẹp – bảo hành 24 tháng."
         />
 
         <motion.div
@@ -24,8 +24,8 @@ export default function About() {
         >
           <p className="leading-relaxed text-lg mb-10 text-gray-300">
             “Ép Biển Số Gia Bảo” là đơn vị chuyên ép biển số xe ô tô và xe máy cao cấp,
-            sử dụng công nghệ ép nhiệt tiên tiến cùng vật liệu phản quang đạt chuẩn CE.
-            Chúng tôi mang đến sản phẩm có độ bền cao, chống phồng rộp, chống oxy hoá
+            sử dụng công nghệ ép máy thuỷ lực tiên tiến cùng vật liệu phản quang.
+            Chúng tôi mang đến sản phẩm có độ bền cao, chống mước, chống oxy hoá
             và giữ màu sắc như mới theo thời gian.
           </p>
 
@@ -49,12 +49,33 @@ export default function About() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/40 pointer-events-none" />
           </motion.div>
 
-          <ul className="mt-10 grid gap-4 text-sm sm:grid-cols-2 text-left text-gray-300">
-            <li>💎 Công nghệ ép nhiệt tiên tiến – bền màu, không bong tróc.</li>
-            <li>🛠️ Chất liệu phản quang cao cấp – đạt chuẩn châu Âu CE.</li>
-            <li>🚗 Phù hợp cho cả xe ô tô & xe máy, đa dạng kiểu dáng.</li>
-            <li>⚡ Giao hàng nhanh – tư vấn thiết kế tận tâm, uy tín hàng đầu.</li>
-          </ul>
+          <ul className="mt-10 grid gap-3 sm:gap-4 text-sm sm:text-base sm:grid-cols-2 text-left">
+  <li className="text-yellow-300">
+    Công nghệ ép thủy lực tiên tiến – bền màu, chống nước tuyệt đối.
+  </li>
+  <li className="text-gray-200">
+    Chất liệu inox phản quang cao cấp – sáng bóng - kiếng chống va đập.
+  </li>
+  <li className="text-yellow-300">
+    Phù hợp cho cả xe ô tô & xe máy – đa dạng kích thước, kiểu dáng tinh tế.
+  </li>
+  <li className="text-gray-200">
+    Thiết kế sắc nét, từng chi tiết được gia công tỉ mỉ, đẳng cấp.
+  </li>
+  <li className="text-yellow-300">
+    Phục hồi và làm mới biển số cũ – bền đẹp như mới chỉ sau 15 phút.
+  </li>
+  <li className="text-gray-200">
+    Tư vấn tận tâm – dịch vụ chuyên nghiệp, uy tín hàng đầu tại Việt Nam.
+  </li>
+  <li className="text-yellow-300">
+    Bảo hành 24 tháng – cam kết chất lượng và sự hài lòng tuyệt đối.
+  </li>
+  <li className="text-gray-200">
+    Hơn 10.000 khách hàng tin tưởng – đánh giá 5★ trên toàn quốc.
+  </li>
+</ul>
+
         </motion.div>
       </Container>
     </section>

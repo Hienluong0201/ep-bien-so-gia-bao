@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Shield, Star, Award, Store } from "lucide-react";
 import { Link } from "react-router-dom";
-import img1 from "../../img/backgrout.jpg";
-import img2 from "../../img/backgrout.jpg";
+import img1 from "../../img/backgout1.jpg";
+import img2 from "../../img/backggrout2.jpg";
 import img3 from "../../img/backgrout.jpg";
 
 const images = [img1, img2, img3];
@@ -42,22 +42,26 @@ export default function Hero() {
       </div>
 
       {/* Hiệu ứng ánh sáng quét */}
-      <motion.div
+      {/* <motion.div
         className="absolute inset-0 bg-gradient-to-r from-transparent via-yellow-200/10 to-transparent"
         animate={{ x: ["-100%", "100%"] }}
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-      />
+      /> */}
 
       {/* Nội dung hero */}
       <div className="relative z-10 bg-black/60 p-10 rounded-2xl backdrop-blur-sm shadow-[0_0_30px_rgba(255,215,0,0.25)] max-w-xl border border-yellow-500/20">
-        <h1 className="text-5xl font-extrabold text-yellow-400 mb-4 drop-shadow-[0_0_12px_rgba(255,215,0,0.5)]">
-          ÉP BIỂN SỐ GIA BẢO
-        </h1>
-        <p className="text-gray-200 mb-8 leading-relaxed text-lg">
-          Dịch vụ ép biển số cao cấp – bền đẹp – chống phồng rộp – đạt chuẩn quốc tế CE.  
-          Bảo vệ biển số xe của bạn một cách sang trọng và đẳng cấp.
-        </p>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-yellow-400 mb-3 sm:mb-4 drop-shadow-[0_0_12px_rgba(255,215,0,0.5)] leading-tight">
+            ÉP BIỂN SỐ GIA BẢO
+          </h1>
 
+          <p className="text-gray-200 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg max-w-md mx-auto">
+            Nâng tầm đẳng cấp cho chiếc xe của bạn với dịch vụ ép biển số cao cấp.  
+            Ép biển số ô tô – xe máy – inox sáng bóng, tinh xảo đến từng chi tiết.  
+            Phục hồi biển số cũ – bảo hành 24 tháng – bền đẹp như mới.  
+            <span className="block mt-2 font-semibold text-yellow-400">
+              Bảo vệ biển số – khẳng định phong cách sang trọng và đẳng cấp.
+            </span>
+          </p>
         {/* 🎯 Nhóm nút hành động */}
         <div className="flex justify-center gap-4 flex-wrap">
           {/* Liên hệ Zalo */}
@@ -93,18 +97,6 @@ export default function Hero() {
           >
             Tin tức mới nhất
           </Link>
-        </div>
-      </div>
-
-      {/* Thông tin phụ */}
-      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 z-10 flex flex-wrap justify-center gap-8 text-yellow-300 text-sm md:text-base">
-        <div className="flex items-center gap-2">
-          <Shield className="w-5 h-5 text-yellow-400" />
-          <span>Bảo hành 12 tháng</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <Star className="w-5 h-5 text-yellow-400" />
-          <span>Khách hàng đánh giá 5★</span>
         </div>
       </div>
 
