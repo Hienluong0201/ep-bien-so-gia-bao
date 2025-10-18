@@ -2,10 +2,9 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Store, Newspaper, MessageCircle, Image } from "lucide-react";
 import { Link } from "react-router-dom";
-import img1 from "../../img/backgout1.jpg";
-import img2 from "../../img/anh2.png";
-import img3 from "../../img/cuahang4.jpg";
-
+const img1 = "https://i.postimg.cc/sgVBFbbX/backgout1.jpg";
+const img2 = "https://i.postimg.cc/PJ3xzqr1/anh2.png";
+const img3 = "https://i.postimg.cc/SxyX0HHR/cuahang4.jpg";
 const images = [img1, img2, img3];
 
 export default function Hero() {
@@ -58,10 +57,8 @@ export default function Hero() {
         <span className="block">Dịch vụ ép biển số ô tô & xe máy cao cấp.</span>
         <span className="block">Phục hồi biển số cũ đẹp như mới.</span>
         <span className="block">chống nước tuyệt đối – sáng bóng bền màu.</span>
-       
-         <span className="block">Áp dụng công nghệ máy ép thủy lực hiện đại.</span>
+        <span className="block">Áp dụng công nghệ máy ép thủy lực hiện đại.</span>
         <span className="block">Bảo hành 24 tháng – đẹp như mới.</span>
-
         <span className="block mt-3 font-semibold text-yellow-400">
           Bảo vệ biển số – khẳng định phong cách và đẳng cấp.
         </span>

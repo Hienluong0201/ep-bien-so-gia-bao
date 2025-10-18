@@ -3,17 +3,16 @@ import SectionHeader from "../components/SectionHeader";
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 
-// ✅ Import 10 ảnh khác nhau
-import bo1 from "../../img/anh14.jpg";
-import bo2 from "../../img/anh8.jpg";
-import bo3 from "../../img/anh4.jpg";
-import bo4 from "../../img/anh5.jpg";
-import bo5 from "../../img/anh6.jpg";
-import bo6 from "../../img/anh9.jpg";
-import bo7 from "../../img/anh10.jpg";
-import bo8 from "../../img/anh11.jpg";
-import bo9 from "../../img/anh12.jpg";
 
+const bo1 = "https://i.postimg.cc/j2g5QjdZ/anh14.jpg";
+const bo2 = "https://i.postimg.cc/QCxCT7sk/anh8.jpg";
+const bo3 = "https://i.postimg.cc/HnsnyMHJ/anh4.jpg";
+const bo4 = "https://i.postimg.cc/x8T8zmYX/anh5.jpg";
+const bo5 = "https://i.postimg.cc/MHKHQBxR/anh6.jpg";
+const bo6 = "https://i.postimg.cc/BbQbKFsC/anh9.jpg";
+const bo7 = "https://i.postimg.cc/vTqBLmHV/anh10.jpg";
+const bo8 = "https://i.postimg.cc/Zn7RFqKp/anh11.jpg";
+const bo9 = "https://i.postimg.cc/2yc6F584/anh12.jpg";
 
 export default function Projects() {
   const plates = [

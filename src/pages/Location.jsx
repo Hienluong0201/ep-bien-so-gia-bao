@@ -5,16 +5,17 @@ import SectionHeader from "../components/SectionHeader";
 import { MapPin, Phone, Clock } from "lucide-react";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
-import cuahang4 from "../../img/cuahang4.jpg";
-import img2 from "../../img/anh2.png";
-import anhtv1 from "../../img/anhtv1.png";
-import anhtv2 from "../../img/anhtv2.png";
-import anhtv3 from "../../img/anhtv3.png";
-import anhtv4 from "../../img/anhtv4.png";
-import anhtv5 from "../../img/anhtv5.png";
-import anhtv6 from "../../img/anhtv7.png";
-import anhtv8 from "../../img/anhtv8.png";
-import anhtv9 from "../../img/anhtv9.png";
+ const cuahang4  = "https://i.postimg.cc/SxyX0HHR/cuahang4.jpg";
+const img2 = "https://i.postimg.cc/PJ3xzqr1/anh2.png";
+const anhtv1 = "https://i.postimg.cc/DZfB96Lr/anhtv1.png";
+const anhtv2 = "https://i.postimg.cc/rmhQM49s/anhtv2.png";
+const anhtv3 = "https://i.postimg.cc/QtN02m1y/anhtv3.png";
+const anhtv4 = "https://i.postimg.cc/JnTPMXQR/anhtv4.png";
+const anhtv5 = "https://i.postimg.cc/k4jfqSyR/anhtv5.png";
+const anhtv6 = "https://i.postimg.cc/rmhQM49D/anhtv6.png";
+const anhtv7 = "https://i.postimg.cc/KjRQzY9q/anhtv7.png";
+const anhtv8 = "https://i.postimg.cc/D0H6bKH3/anhtv8.png";
+const anhtv9 = "https://i.postimg.cc/wxG0rhvQ/anhtv9.png";
 
 export default function Location() {
   const images = [cuahang4, img2];
