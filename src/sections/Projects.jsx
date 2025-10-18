@@ -13,7 +13,7 @@ import bo6 from "../../img/anh9.jpg";
 import bo7 from "../../img/anh10.jpg";
 import bo8 from "../../img/anh11.jpg";
 import bo9 from "../../img/anh12.jpg";
-import bo10 from "../../img/bo3.jpg";
+
 
 export default function Projects() {
   const plates = [
