@@ -13,7 +13,6 @@ const anhtv3 = "https://i.postimg.cc/QtN02m1y/anhtv3.png";
 const anhtv4 = "https://i.postimg.cc/JnTPMXQR/anhtv4.png";
 const anhtv5 = "https://i.postimg.cc/k4jfqSyR/anhtv5.png";
 const anhtv6 = "https://i.postimg.cc/rmhQM49D/anhtv6.png";
-const anhtv7 = "https://i.postimg.cc/KjRQzY9q/anhtv7.png";
 const anhtv8 = "https://i.postimg.cc/D0H6bKH3/anhtv8.png";
 const anhtv9 = "https://i.postimg.cc/wxG0rhvQ/anhtv9.png";
 
@@ -33,24 +32,24 @@ export default function Location() {
       {/* 🏪 HERO - Biển số & ánh sáng có background slider */}
       <div className="relative w-full h-[100vh] flex items-center justify-center overflow-hidden pt-[80px]">
         {/* 🎞️ Background slider */}
-        <div className="absolute inset-0 w-full h-full flex">
-          <motion.div
-            className="flex w-full h-full"
-            animate={{ x: `-${index * 100}%` }}
-            transition={{ duration: 1.2, ease: "easeInOut" }}
-          >
-            {images.map((src, i) => (
-              <div key={i} className="w-full h-full flex-shrink-0 relative">
-                <img
-                  src={src}
-                  alt={`Slide ${i}`}
-                  className="w-full h-full object-cover brightness-[0.75] saturate-[1.1] contrast-[1.05]"
-                />
-                <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80" />
-              </div>
-            ))}
-          </motion.div>
-        </div>
+     {/* 🎞️ Background slider mượt */}
+<div className="absolute inset-0 w-full h-full overflow-hidden">
+  <div className="relative w-full h-full">
+    {images.map((src, i) => (
+      <img
+        key={i}
+        src={src}
+        alt={`Slide ${i}`}
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[1200ms] ease-in-out brightness-[0.75] saturate-[1.1] contrast-[1.05]
+          ${i === index ? "opacity-100" : "opacity-0"}`}
+        loading="lazy"
+        decoding="async"
+      />
+    ))}
+    <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80" />
+  </div>
+</div>
+
 
         {/* Viền kim loại */}
         <div

@@ -17,7 +17,7 @@ export default function NavBar() {
   const pageLinks = [
     { to: "/dich-vu", label: "Dịch vụ" },
     { to: "/tin-tuc", label: "Tin tức" },
-     { to: "/location", label: "Địa chỉ" }, 
+    { to: "/location", label: "Địa chỉ" },
   ];
 
   // 🧭 Khi bấm vào section trong Home
@@ -73,7 +73,7 @@ export default function NavBar() {
 
           {/* 🌐 Facebook */}
           <a
-            href="https://facebook.com/yourprofile" // 🔗 đổi link Facebook thật ở đây
+            href="https://www.facebook.com/share/1CwLUXSkB8/"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-6 text-yellow-300 hover:text-yellow-400 hover:scale-110 transition-transform duration-300"
@@ -127,7 +127,7 @@ export default function NavBar() {
 
           {/* 🌐 Facebook trên Mobile */}
           <a
-            href="https://facebook.com/yourprofile"
+            href="https://www.facebook.com/share/1CwLUXSkB8/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-yellow-300 hover:text-yellow-400 transition"
