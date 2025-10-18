@@ -17,6 +17,7 @@ export default function NavBar() {
   const pageLinks = [
     { to: "/dich-vu", label: "Dịch vụ" },
     { to: "/tin-tuc", label: "Tin tức" },
+     { to: "/location", label: "Địa chỉ" }, 
   ];
 
   // 🧭 Khi bấm vào section trong Home

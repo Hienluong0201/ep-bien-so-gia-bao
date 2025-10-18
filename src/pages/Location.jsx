@@ -1,106 +1,209 @@
-import Container from '../components/Container'
-import SectionHeader from '../components/SectionHeader'
-import { MapPin, ArrowLeft } from 'lucide-react'
-import Footer from '../components/Footer'
-import { Link } from 'react-router-dom'
+import Container from "../components/Container";
+import SectionHeader from "../components/SectionHeader";
+import { MapPin, ArrowLeft, Phone, Clock } from "lucide-react";
+import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 export default function Location() {
   return (
-    <div className="min-h-screen bg-white">
-      {/* Ảnh nền hero to full màn hình */}
-      <div className="relative w-full h-[100vh]">
-      <img
-      src="/img/cuahang.jpg"
-      alt="Cửa hàng Ép Biển Số Gia Bảo"
-      className="absolute inset-0 w-full h-full object-cover brightness-75"
-    />
-        <div className="absolute top-6 left-6 z-10">
-          <Link
-            to="/"
-            className="inline-flex items-center gap-2 bg-white/80 text-gray-800 px-4 py-2 rounded-lg font-medium hover:bg-white transition shadow-md"
+    <div className="min-h-screen bg-black text-gray-100 font-sans">
+      {/* HERO - Giống biển số thật + ánh sáng */}
+     <div className="relative w-full h-[100vh] flex items-center justify-center overflow-hidden pt-[80px]">
+  {/* Ảnh nền thật, mờ nhẹ để chữ nổi */}
+  <img
+    src="/img/cuahang4.jpg"
+    alt="Cửa hàng Ép Biển Số Gia Bảo"
+    className="absolute inset-0 w-full h-full object-cover saturate-[1.1] contrast-[1.05] brightness-[0.75] blur-[1.5px]"
+  />
+
+  {/* Overlay gradient làm dịu màu nền */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80" />
+  <div className="absolute top-0 w-full h-[100px] bg-gradient-to-b from-yellow-400/10 to-transparent blur-[50px]" />
+
+  {/* KHUNG VIỀN KIM LOẠI - hạ xuống thêm + tránh header */}
+  <div
+    className="absolute top-[90px] bottom-[10px] left-[10px] right-[10px]
+               rounded-3xl border-[8px] border-neutral-300 
+               shadow-[0_0_50px_rgba(255,255,255,0.25),inset_0_0_25px_rgba(0,0,0,0.6)]"
+    style={{
+      boxShadow:
+        "0 0 50px rgba(255,255,255,0.2), inset 0 0 25px rgba(0,0,0,0.6), 0 0 20px rgba(255,200,0,0.1)",
+    }}
+  ></div>
+  {/* Nội dung hero */}
+  <div className="relative z-10 text-center px-6 max-w-3xl">
+    <h1
+      className="text-5xl md:text-6xl font-extrabold uppercase mb-5 
+      bg-gradient-to-b from-yellow-300 via-yellow-400 to-yellow-500 text-transparent bg-clip-text
+      drop-shadow-[0_3px_10px_rgba(255,215,0,0.4)]"
+      style={{
+        WebkitTextStroke: "1px rgba(0,0,0,0.7)",
+      }}
+    >
+      CỬA HÀNG GIA BẢO
+    </h1>
+
+    <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]">
+      Nâng tầm không gian ép biển số Việt Nam —  
+      phản quang, viền inox sáng, công nghệ ép thủy lực hiện đại,  
+      mang đến sự bền bỉ và đẳng cấp khác biệt.
+    </p>
+
+    {/* Dải sáng phản chiếu dưới chữ */}
+    <div className="mt-6 w-[220px] h-[3px] mx-auto bg-gradient-to-r from-transparent via-yellow-400 to-transparent blur-[1px]" />
+  </div>
+
+  {/* Hiệu ứng ánh sáng phản chiếu dưới sàn */}
+  <div className="absolute bottom-0 left-0 w-full h-[150px] bg-gradient-to-t from-yellow-400/10 to-transparent blur-[50px]" />
+</div>
+
+
+      {/* PHẦN DƯỚI */}
+      <section className="py-24 bg-gradient-to-b from-black via-neutral-900 to-black">
+        <Container>
+          <SectionHeader
+            kicker="ĐỊA ĐIỂM CHÍNH THỨC"
+            title="ÉP BIỂN SỐ GIA BẢO"
+            subtitle="Trung tâm Phú Nhuận – chuyên ép biển số ô tô, xe máy phản quang, ép thủy lực, viền inox cao cấp."
+          />
+
+          <div className="mx-auto max-w-3xl text-center text-gray-300 mt-10 mb-20 leading-relaxed">
+            <p className="text-xl mb-6">
+  <span className="text-yellow-400 font-semibold">Gia Bảo</span> –  
+  nơi bạn có thể tận mắt thấy quy trình ép biển hiện đại nhất Việt Nam,  
+  ứng dụng công nghệ ép thủy lực tiên tiến và vật liệu phản quang cao cấp,  
+  đảm bảo độ bền, chống nước và sáng bóng vượt thời gian.
+</p>
+
+          </div>
+
+          {/* ƯU ĐIỂM */}
+      {/* QUY TRÌNH ÉP BIỂN SỐ */}
+<div className="max-w-5xl mx-auto mb-24">
+  <h3 className="text-center text-3xl font-bold text-yellow-400 mb-10">
+    Quy trình ép biển số (6 bước)
+  </h3>
+  <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    {[
+      {
+        num: 1,
+        title: "Tiếp nhận & tư vấn",
+        desc: "Trao đổi nhu cầu, chọn kiểu hoàn thiện phù hợp xe và ngân sách.",
+        img: "/img/cuahang4.jpg",
+      },
+      {
+        num: 2,
+        title: "Vệ sinh & kiểm tra",
+        desc: "Làm sạch, kiểm tra bề mặt – đảm bảo độ bám tốt và an toàn.",
+        img: "/img/cuahang4.jpg",
+      },
+      {
+        num: 3,
+        title: "Cắt – canh form",
+        desc: "Cắt khuôn chuẩn, canh lề đúng chuẩn kích thước Việt Nam.",
+        img: "/img/cuahang4.jpg",
+      },
+      {
+        num: 4,
+        title: "Ép thủy lực/ép nhiệt",
+        desc: "Ép với mica phản quang, áp lực – nhiệt độ tối ưu, chống bọt.",
+        img: "/img/cuahang4.jpg",
+      },
+      {
+        num: 5,
+        title: "Hoàn thiện & chống nước",
+        desc: "Ép viền inox, kiểm tra độ kín, chống nước – chống tia UV.",
+        img: "/img/cuahang4.jpg",
+      },
+      {
+        num: 6,
+        title: "Bàn giao & bảo hành",
+        desc: "Vệ sinh cuối, hướng dẫn bảo quản, kích hoạt BH 24 tháng.",
+        img: "/img/cuahang4.jpg",
+      },
+    ].map((step) => (
+      <div
+        key={step.num}
+        className="group relative overflow-hidden rounded-2xl bg-neutral-900/70 border border-yellow-400/20
+                   shadow-[0_0_18px_rgba(255,215,0,0.08)] hover:shadow-[0_0_28px_rgba(255,215,0,0.2)]
+                   hover:border-yellow-400/50 transition-all duration-500"
+      >
+        {/* Ảnh bước */}
+        <div className="relative h-44">
+          <img
+            src={step.img}
+            alt={step.title}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+          />
+          {/* Huy hiệu số bước */}
+          <div
+            className="absolute top-3 left-3 w-10 h-10 rounded-full
+                       bg-gradient-to-br from-yellow-400 to-yellow-500
+                       text-black font-extrabold flex items-center justify-center
+                       shadow-[0_0_14px_rgba(255,215,0,0.5)]"
           >
-            <ArrowLeft className="w-5 h-5" />
-            Quay lại trang chủ
-          </Link>
+            {step.num}
+          </div>
+          {/* lớp mờ ảnh nhẹ để đọc text dưới */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
         </div>
 
-        {/* Tiêu đề nằm giữa ảnh */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4">
-          <h1 className="text-5xl font-bold mb-4 drop-shadow-lg">
-            Cửa Hàng Ép Biển Số Gia Bảo
-          </h1>
-          <p className="text-lg max-w-2xl">
-            Đến trực tiếp cửa hàng để xem mẫu thật, trải nghiệm quy trình ép biển cao cấp chuẩn CE quốc tế.
+        {/* Nội dung bước */}
+        <div className="p-5">
+          <h4 className="text-lg font-semibold text-yellow-300 mb-1">
+            {step.title}
+          </h4>
+          <p className="text-gray-300 text-sm leading-relaxed">
+            {step.desc}
           </p>
         </div>
       </div>
+    ))}
+  </div>
+</div>
 
-      {/* Nội dung chi tiết */}
-      <section id="location" className="py-28 bg-gradient-to-b from-white to-gray-50">
-        <Container>
-          <SectionHeader
-            kicker="THÔNG TIN CỬA HÀNG"
-            title="Ép Biển Số Gia Bảo"
-            subtitle="Địa điểm chính thức tại trung tâm Phú Nhuận – chuyên ép biển số ô tô & xe máy cao cấp, công nghệ ép nhiệt chuẩn CE."
-          />
 
-          {/* Mô tả chi tiết */}
-          <div className="mx-auto max-w-4xl text-center text-neutral-800 leading-relaxed mb-16">
-            <p className="text-2xl font-semibold mb-6">
-              🎯 <strong>Ép Biển Số Gia Bảo</strong> – địa chỉ tin cậy hàng đầu tại TP.HCM trong lĩnh vực ép biển số cao cấp.
-            </p>
+          {/* LIÊN HỆ */}
+          <div className="mx-auto max-w-3xl text-center">
+            <h3 className="text-3xl font-bold text-yellow-400 mb-6">
+              Liên hệ & Địa chỉ cửa hàng
+            </h3>
 
-            <p className="text-xl mb-8">
-              Cửa hàng trang bị <strong>máy ép nhiệt hiện đại</strong>, đảm bảo biển số phẳng tuyệt đối, phản quang chuẩn CE, 
-              bền màu và sang trọng.  
-              <br /><br />
-              Khách hàng có thể trực tiếp xem quy trình ép, lựa chọn mẫu và nhận biển ngay trong ngày.
-            </p>
-          </div>
-
-          {/* Ưu điểm */}
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-20 text-left text-lg text-gray-800">
-            <div className="p-6 bg-white rounded-xl shadow-md">
-              💎 Biển phản quang cao cấp – sắc nét, sáng đẹp, chuẩn châu Âu CE.
+            <div className="space-y-3 text-lg text-gray-300 mb-10">
+              <p>
+                📍 <strong>121 Trần Huy Liệu</strong>, Phường 11, Phú Nhuận, TP.HCM
+              </p>
+              <p>
+                <Clock className="inline-block w-5 h-5 text-yellow-400 mr-1" />
+                Giờ làm việc: <strong>8h00 - 19h00 (Thứ 2 - CN)</strong>
+              </p>
+              <p>
+                <Phone className="inline-block w-5 h-5 text-yellow-400 mr-1" />
+                Hotline:{" "}
+                <a
+                  href="tel:0972555038"
+                  className="text-yellow-300 hover:text-yellow-200 underline font-semibold"
+                >
+                  0972 555 038
+                </a>
+              </p>
             </div>
-            <div className="p-6 bg-white rounded-xl shadow-md">
-              ⚙️ Ép nhiệt tiên tiến – không phồng rộp, không bong keo.
-            </div>
-            <div className="p-6 bg-white rounded-xl shadow-md">
-              🚗 Nhận ép cho ô tô & xe máy – thiết kế theo yêu cầu riêng.
-            </div>
-            <div className="p-6 bg-white rounded-xl shadow-md">
-              📦 Giao nhanh, bảo hành dài hạn, hỗ trợ toàn quốc.
-            </div>
-          </div>
 
-          {/* Thông tin liên hệ */}
-          <div className="mx-auto max-w-3xl text-center text-gray-900">
-            <h3 className="text-3xl font-bold mb-4">Liên hệ & Địa chỉ cửa hàng</h3>
-            <p className="text-xl mb-6">
-              📍 <strong>Địa chỉ:</strong> 121 Đ. Trần Huy Liệu, Phường 11, Phú Nhuận, TP. Hồ Chí Minh  
-              <br />
-              ⏰ <strong>Giờ làm việc:</strong> 8h00 - 19h00 (Thứ 2 - CN)
-              <br />
-              ☎️ <strong>Hotline:</strong>{' '}
-              <a href="tel:0972555038" className="text-blue-600 underline hover:text-blue-500 font-semibold">
-                0972 555 038
-              </a>
-            </p>
+           <a
+            href="https://maps.app.goo.gl/HmmvBzhv1wqKaJtBA"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-yellow-500 to-yellow-400 
+                      text-black px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 
+                      transition-transform shadow-[0_0_25px_rgba(255,215,0,0.5)]"
+          >
+            <MapPin className="w-6 h-6" />
+            Xem bản đồ chỉ đường
+          </a>
 
-            {/* Nút mở Google Maps */}
-            <a
-              href="https://maps.app.goo.gl/NajMmXXPRcv2XdLu5"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-blue-500 transition"
-            >
-              <MapPin className="w-6 h-6" />
-              Mở Google Maps để xem đường đi
-            </a>
           </div>
         </Container>
       </section>
     </div>
-  )
+  );
 }

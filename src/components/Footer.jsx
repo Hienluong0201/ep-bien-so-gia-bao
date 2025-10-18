@@ -12,7 +12,7 @@ export default function Footer() {
             <span className="text-yellow-400 font-semibold">
               Ép Biển Số Gia Bảo
             </span>{' '}
-            – Bền đẹp & Chuẩn quốc tế CE.
+            – Bền đẹp • Chống nước • Bảo hành 24 tháng.
           </p>
 
           {/* Liên hệ */}
@@ -36,8 +36,9 @@ export default function Footer() {
           </p>
 
           {/* Mô tả ngắn */}
-          <p className="mt-4 text-xs text-neutral-500 max-w-2xl mx-auto">
-            Ép Biển Số Gia Bảo – Dịch vụ ép biển số ô tô & xe máy cao cấp, sử dụng công nghệ ép nhiệt chuẩn CE Châu Âu.  
+          <p className="mt-4 text-xs text-neutral-500 max-w-2xl mx-auto leading-relaxed">
+            Ép Biển Số Gia Bảo – Dịch vụ ép biển số ô tô & xe máy cao cấp,  
+            sử dụng công nghệ ép thủy lực và mica phản quang bền đẹp theo thời gian.  
             Giao hàng toàn quốc • Chất lượng – Uy tín – Đẳng cấp.
           </p>
 
@@ -59,10 +60,10 @@ export default function Footer() {
       </div>
 
       {/* 🗺️ Google Maps hiển thị trực tiếp */}
-      <div className="relative w-full h-[350px] md:h-[400px] overflow-hidden border-t border-neutral-700">
+      <div className="relative w-full h-[350px] md:h-[420px] overflow-hidden border-t border-yellow-500/20 shadow-[0_-4px_30px_rgba(255,215,0,0.1)]">
         <iframe
           title="Bản đồ cửa hàng Ép Biển Số Gia Bảo"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2012039377165!2d106.67602167480343!3d10.795659989345708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d3b7dfae07%3A0x8b6b9a5b34e144d2!2zMTIxIMSQLiBUcuG6p24gSHV5IExp4buHdSwgUGjDuiBOaHXhuqVuLCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1697026664778!5m2!1svi!2s"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1959.614027748759!2d106.67621!3d10.7938376!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529005541bb95%3A0xa0a971c48fa7ea65!2zw4lwIGJp4buDbiBz4buRIEdpYSBC4bqjbw!5e0!3m2!1svi!2s!4v1760779485213!5m2!1svi!2s"
           width="100%"
           height="100%"
           style={{ border: 0 }}
@@ -71,8 +72,11 @@ export default function Footer() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
 
-        {/* Overlay hiệu ứng nhẹ để đọc dễ hơn */}
-        <div className="absolute inset-0 bg-black/10 backdrop-blur-[1px]" />
+        {/* Overlay hiệu ứng ánh sáng nhẹ */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20 backdrop-blur-[1px]" />
+
+        {/* Viền ánh vàng sang trọng */}
+        <div className="absolute inset-0 border-t border-yellow-400/30 pointer-events-none" />
       </div>
     </footer>
   )

@@ -4,7 +4,7 @@ import { Store, Newspaper, MessageCircle, Image } from "lucide-react";
 import { Link } from "react-router-dom";
 import img1 from "../../img/backgout1.jpg";
 import img2 from "../../img/backggrout2.jpg";
-import img3 from "../../img/backgrout.jpg";
+import img3 from "../../img/cuahang4.jpg";
 
 const images = [img1, img2, img3];
 
@@ -49,21 +49,27 @@ export default function Hero() {
         className="relative z-10 max-w-xl w-[90%] p-8 sm:p-10 rounded-3xl bg-black/60 backdrop-blur-xl border border-yellow-400/30 shadow-[0_0_35px_rgba(255,215,0,0.35)]"
       >
         {/* Tiêu đề */}
-        <h1 className="text-4xl sm:text-5xl font-extrabold text-yellow-400 mb-5 drop-shadow-[0_0_15px_rgba(255,215,0,0.6)] leading-tight">
+        <h1 className="text-3xl sm:text-3xl font-extrabold text-yellow-400 mb-5 drop-shadow-[0_0_15px_rgba(255,215,0,0.6)] tracking-wide">
           ÉP BIỂN SỐ GIA BẢO
         </h1>
 
-        <p className="text-gray-200 text-base sm:text-lg mb-6 leading-relaxed">
-          Dịch vụ ép biển số ô tô & xe máy cao cấp – phản quang chuẩn CE,
-          sáng bóng và bền đẹp vượt thời gian.  
-          <span className="block mt-2 font-semibold text-yellow-400">
-            Bảo vệ biển số – khẳng định phong cách và đẳng cấp.
-          </span>
-        </p>
+        {/* Mô tả */}
+      <p className="text-gray-200 text-base sm:text-lg mb-6 leading-relaxed text-center">
+  <span className="block">Dịch vụ ép biển số ô tô & xe máy cao cấp,</span>
+  <span className="block">chống nước tuyệt đối – sáng bóng bền màu,</span>
+  <span className="block">áp dụng công nghệ ép thủy lực hiện đại,</span>
+  <span className="block">bảo hành 24 tháng – đẹp như mới.</span>
 
-        {/* 🎯 Nhóm nút */}
-        <div className="grid grid-cols-2 gap-4 sm:flex sm:flex-wrap sm:justify-center">
-          {/* Liên hệ Zalo */}
+  <span className="block mt-3 font-semibold text-yellow-400">
+    Bảo vệ biển số – khẳng định phong cách và đẳng cấp.
+  </span>
+</p>
+
+
+
+        {/* 🎯 4 Nút – chia 2 hàng */}
+        <div className="grid grid-cols-2 gap-4 justify-center">
+          {/* Zalo */}
           <a
             href="https://zalo.me/0972555038"
             target="_blank"
@@ -74,13 +80,13 @@ export default function Hero() {
             <span>Zalo</span>
           </a>
 
-          {/* Bộ sưu tập */}
+          {/* Bộ mẫu */}
           <a
             href="#projects"
             className="flex items-center justify-center gap-2 border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black font-semibold px-6 py-3 rounded-xl transition-transform hover:scale-105"
           >
             <Image className="w-5 h-5" />
-            <span>Bộ sưu tập</span>
+            <span>Bộ mẫu</span>
           </a>
 
           {/* Cửa hàng */}
