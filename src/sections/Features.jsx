@@ -106,7 +106,8 @@ export default function Features() {
         .animate-marquee {
           display: inline-flex;
           width: 200%;
-          animation: marquee 45s linear infinite;
+          animation: marquee 10s linear infinite;
+
         }
 
         /* Cho phép text xuống dòng thay vì kéo dài ra */

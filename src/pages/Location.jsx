@@ -1,27 +1,57 @@
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import Container from "../components/Container";
 import SectionHeader from "../components/SectionHeader";
 import { MapPin, Phone, Clock } from "lucide-react";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import cuahang4 from "../../img/cuahang4.jpg";
+import img2 from "../../img/anh2.png";
+import anhtv1 from "../../img/anhtv1.png";
+import anhtv2 from "../../img/anhtv2.png";
+import anhtv3 from "../../img/anhtv3.png";
+import anhtv4 from "../../img/anhtv4.png";
+import anhtv5 from "../../img/anhtv5.png";
+import anhtv6 from "../../img/anhtv7.png";
+import anhtv8 from "../../img/anhtv8.png";
+import anhtv9 from "../../img/anhtv9.png";
 
 export default function Location() {
+  const images = [cuahang4, img2];
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 3000); // thời gian đổi ảnh (ms)
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="min-h-screen bg-black text-gray-100 font-sans">
-      {/* 🏪 HERO - Biển số & ánh sáng */}
+      {/* 🏪 HERO - Biển số & ánh sáng có background slider */}
       <div className="relative w-full h-[100vh] flex items-center justify-center overflow-hidden pt-[80px]">
-        {/* Ảnh nền thật, mờ nhẹ để chữ nổi */}
-        <img
-          src={cuahang4}
-          alt="Cửa hàng Ép Biển Số Gia Bảo"
-          className="absolute inset-0 w-full h-full object-cover saturate-[1.1] contrast-[1.05] brightness-[0.75] blur-[1.5px]"
-        />
+        {/* 🎞️ Background slider */}
+        <div className="absolute inset-0 w-full h-full flex">
+          <motion.div
+            className="flex w-full h-full"
+            animate={{ x: `-${index * 100}%` }}
+            transition={{ duration: 1.2, ease: "easeInOut" }}
+          >
+            {images.map((src, i) => (
+              <div key={i} className="w-full h-full flex-shrink-0 relative">
+                <img
+                  src={src}
+                  alt={`Slide ${i}`}
+                  className="w-full h-full object-cover brightness-[0.75] saturate-[1.1] contrast-[1.05]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80" />
+              </div>
+            ))}
+          </motion.div>
+        </div>
 
-        {/* Overlay gradient làm dịu nền */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80" />
-        <div className="absolute top-0 w-full h-[100px] bg-gradient-to-b from-yellow-400/10 to-transparent blur-[50px]" />
-
-        {/* Khung viền kim loại */}
+        {/* Viền kim loại */}
         <div
           className="absolute top-[90px] bottom-[10px] left-[10px] right-[10px]
                      rounded-3xl border-[8px] border-neutral-300 
@@ -32,7 +62,7 @@ export default function Location() {
           }}
         />
 
-        {/* Nội dung hero */}
+        {/* Nội dung */}
         <div className="relative z-10 text-center px-6 max-w-3xl">
           <h1
             className="text-5xl md:text-6xl font-extrabold uppercase mb-5 
@@ -48,12 +78,23 @@ export default function Location() {
             công nghệ ép thủy lực hiện đại, mang đến sự bền bỉ và đẳng cấp khác biệt.
           </p>
 
-          {/* Dải sáng phản chiếu */}
           <div className="mt-6 w-[220px] h-[3px] mx-auto bg-gradient-to-r from-transparent via-yellow-400 to-transparent blur-[1px]" />
         </div>
 
-        {/* Ánh sáng phản chiếu dưới sàn */}
+        {/* Hiệu ứng sáng dưới sàn */}
         <div className="absolute bottom-0 left-0 w-full h-[150px] bg-gradient-to-t from-yellow-400/10 to-transparent blur-[50px]" />
+
+        {/* Dấu chấm chuyển slide */}
+        <div className="absolute bottom-6 flex gap-3 z-10">
+          {images.map((_, i) => (
+            <div
+              key={i}
+              className={`w-3 h-3 rounded-full transition-all duration-500 ${
+                i === index ? "bg-yellow-400 scale-125" : "bg-gray-500/50"
+              }`}
+            />
+          ))}
+        </div>
       </div>
 
       {/* 🧱 PHẦN DƯỚI */}
@@ -77,7 +118,7 @@ export default function Location() {
           {/* ⚙️ QUY TRÌNH ÉP BIỂN SỐ */}
           <div className="max-w-5xl mx-auto mb-24">
             <h3 className="text-center text-3xl font-bold text-yellow-400 mb-10">
-              Quy trình ép biển số (6 bước)
+              Quy trình ép biển số (8 bước)
             </h3>
 
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -86,37 +127,49 @@ export default function Location() {
                   num: 1,
                   title: "Tiếp nhận & tư vấn",
                   desc: "Trao đổi nhu cầu, chọn kiểu hoàn thiện phù hợp xe và ngân sách.",
-                  img: cuahang4,
+                  img: anhtv1,
                 },
                 {
                   num: 2,
-                  title: "Vệ sinh & kiểm tra",
-                  desc: "Làm sạch, kiểm tra bề mặt – đảm bảo độ bám tốt và an toàn.",
-                  img: cuahang4,
+                  title: "Vệ sinh & kiểm tra - cắt – canh form",
+                  desc: "Làm sạch, cắt khuôn chuẩn, canh lề đúng chuẩn kích thước Việt Nam.",
+                  img: anhtv2,
                 },
                 {
                   num: 3,
-                  title: "Cắt – canh form",
-                  desc: "Cắt khuôn chuẩn, canh lề đúng chuẩn kích thước Việt Nam.",
-                  img: cuahang4,
+                  title: "Ép thuỷ lực",
+                  desc: "Ép với mica phản quang, áp lực – nhiệt độ tối ưu, chống bọt.",
+                  img: anhtv3,
                 },
                 {
                   num: 4,
-                  title: "Ép thủy lực/ép nhiệt",
-                  desc: "Ép với mica phản quang, áp lực – nhiệt độ tối ưu, chống bọt.",
-                  img: cuahang4,
+                  title: "Chà Nhám Lần 1 – Tạo Độ Bám",
+                  desc: "Làm sạch và chà nhẹ bề mặt kim loại để tạo độ nhám giúp lớp phản quang và keo bám dính chắc chắn hơn.",
+                  img: anhtv4,
                 },
                 {
                   num: 5,
-                  title: "Hoàn thiện & chống nước",
-                  desc: "Ép viền inox, kiểm tra độ kín, chống nước – chống tia UV.",
-                  img: cuahang4,
+                  title: "Chà Nhám Lần 2 – Làm Mịn Bề Mặt",
+                  desc: "Tiếp tục chà tinh để loại bỏ tạp chất, làm phẳng đều toàn bộ mặt biển, đảm bảo độ mịn và độ bám sơn cao nhất.",
+                  img: anhtv5,
                 },
                 {
                   num: 6,
-                  title: "Bàn giao & bảo hành",
-                  desc: "Vệ sinh cuối, hướng dẫn bảo quản, kích hoạt BH 24 tháng.",
-                  img: cuahang4,
+                  title: "Chà Nhám Lần 3 – Hoàn Thiện Trước Khi Ép",
+                  desc: "Kiểm tra kỹ toàn bộ bề mặt, chà mịn lại các góc và chi tiết nhỏ trước khi phủ phản quang và ép viền inox.",
+                  img: anhtv6,
+                },
+                {
+                  num: 7,
+                  title: "Máy Đánh Bóng Bề Mặt",
+                  desc: "Sử dụng máy đánh bóng chuyên dụng để làm mịn và sáng đều toàn bộ bề mặt biển, giúp phản quang mạnh và thẩm mỹ cao.",
+                  img: anhtv8,
+                },
+                {
+                  num: 8,
+                  title: "Hoàn Thiện & Bàn Giao",
+                  desc: "Lắp viền inox, kiểm tra chi tiết cuối cùng, vệ sinh sạch và bàn giao cho khách – kèm bảo hành 24 tháng.",
+                  img: anhtv9,
                 },
               ].map((step) => (
                 <div
@@ -125,14 +178,12 @@ export default function Location() {
                              shadow-[0_0_18px_rgba(255,215,0,0.08)] hover:shadow-[0_0_28px_rgba(255,215,0,0.2)]
                              hover:border-yellow-400/50 transition-all duration-500"
                 >
-                  {/* Ảnh bước */}
                   <div className="relative h-44">
                     <img
                       src={step.img}
                       alt={step.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
-                    {/* Huy hiệu số bước */}
                     <div
                       className="absolute top-3 left-3 w-10 h-10 rounded-full
                                  bg-gradient-to-br from-yellow-400 to-yellow-500
@@ -141,13 +192,12 @@ export default function Location() {
                     >
                       {step.num}
                     </div>
-                    {/* lớp mờ ảnh nhẹ */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
                   </div>
-
-                  {/* Nội dung bước */}
                   <div className="p-5">
-                    <h4 className="text-lg font-semibold text-yellow-300 mb-1">{step.title}</h4>
+                    <h4 className="text-lg font-semibold text-yellow-300 mb-1">
+                      {step.title}
+                    </h4>
                     <p className="text-gray-300 text-sm leading-relaxed">{step.desc}</p>
                   </div>
                 </div>
@@ -160,7 +210,6 @@ export default function Location() {
             <h3 className="text-3xl font-bold text-yellow-400 mb-6">
               Liên hệ & Địa chỉ cửa hàng
             </h3>
-
             <div className="space-y-3 text-lg text-gray-300 mb-10">
               <p>
                 📍 <strong>121 Trần Huy Liệu</strong>, Phường 11, Phú Nhuận, TP.HCM
@@ -180,8 +229,6 @@ export default function Location() {
                 </a>
               </p>
             </div>
-
-            {/* Nút bản đồ */}
             <a
               href="https://maps.app.goo.gl/HmmvBzhv1wqKaJtBA"
               target="_blank"

@@ -48,22 +48,24 @@ export default function Hero() {
         transition={{ duration: 1 }}
         className="relative z-10 max-w-xl w-[90%] p-8 sm:p-10 rounded-3xl bg-black/60 backdrop-blur-xl border border-yellow-400/30 shadow-[0_0_35px_rgba(255,215,0,0.35)]"
       >
-        {/* Tiêu đề */}
+        {/* Tiêu đề */} 
         <h1 className="text-3xl sm:text-3xl font-extrabold text-yellow-400 mb-5 drop-shadow-[0_0_15px_rgba(255,215,0,0.6)] tracking-wide">
           ÉP BIỂN SỐ GIA BẢO
         </h1>
 
         {/* Mô tả */}
       <p className="text-gray-200 text-base sm:text-lg mb-6 leading-relaxed text-center">
-  <span className="block">Dịch vụ ép biển số ô tô & xe máy cao cấp,</span>
-  <span className="block">chống nước tuyệt đối – sáng bóng bền màu,</span>
-  <span className="block">áp dụng công nghệ ép thủy lực hiện đại,</span>
-  <span className="block">bảo hành 24 tháng – đẹp như mới.</span>
+        <span className="block">Dịch vụ ép biển số ô tô & xe máy cao cấp.</span>
+        <span className="block">Phục hồi biển số cũ đẹp như mới.</span>
+        <span className="block">chống nước tuyệt đối – sáng bóng bền màu.</span>
+       
+         <span className="block">Áp dụng công nghệ máy ép thủy lực hiện đại.</span>
+        <span className="block">Bảo hành 24 tháng – đẹp như mới.</span>
 
-  <span className="block mt-3 font-semibold text-yellow-400">
-    Bảo vệ biển số – khẳng định phong cách và đẳng cấp.
-  </span>
-</p>
+        <span className="block mt-3 font-semibold text-yellow-400">
+          Bảo vệ biển số – khẳng định phong cách và đẳng cấp.
+        </span>
+      </p>
 
 
 

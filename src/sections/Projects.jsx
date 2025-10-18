@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 
 // ✅ Import 10 ảnh khác nhau
-import bo1 from "../../img/anh3.jpg";
+import bo1 from "../../img/anh14.jpg";
 import bo2 from "../../img/anh8.jpg";
 import bo3 from "../../img/anh4.jpg";
 import bo4 from "../../img/anh5.jpg";
@@ -18,17 +18,18 @@ import bo9 from "../../img/anh12.jpg";
 export default function Projects() {
   const plates = [
   {
-    title: "Mẫu Ép Biển Số Ô Tô Ngoại Giao Cao Cấp",
+    title: "Mẫu Ép Biển Số Ô Tô Cao Cấp",
     image: bo1,
     description:
-      "Biển số nền trắng chữ đỏ dành cho xe ngoại giao – ép thủy lực phản quang, sắc nét, bền màu và chống nước tuyệt đối.",
+      "Biển số nền trắng cho xe cao cấp - gắm Cờ – ép thủy lực phản quang, sắc nét, bền màu và chống nước tuyệt đối.",
   },
   {
-    title: "Ép Biển Số xe máy ",
-    image: bo2,
-    description:
-      "Biển số trắng, vàng, đỏ – ép chuẩn khuôn, bề mặt sáng bóng, giữ màu bền lâu, phù hợp mọi loại xe từ 4 chỗ đến xe tải, xe kinh doanh.",
-  },
+  title: "Ép Biển Số Xe Máy Cao Cấp",
+  image: bo2,
+  description:
+    "Biển số xe máy phản quang – ép thủy lực chuẩn form, chống nước tuyệt đối, sáng bóng và bền màu theo thời gian.",
+},
+
   {
     title: "Phiên Bản Biển Số Phản Quang Cao Cấp",
     image: bo3,
@@ -42,16 +43,16 @@ export default function Projects() {
       "Ép chuẩn thủy lực, bền màu, giữ nguyên độ phản quang và viền sắc nét – đậm chất cao cấp.",
   },
   {
-    title: "Ép Biển Số Xe Tải & Xe Khách Bền Bỉ",
+    title: "Ép Biển Số Xe Tải & Xe Khách",
     image: bo5,
     description:
-      "Kích thước lớn, ép chắc chắn, bề mặt sáng bóng – chống rỉ sét, bong tróc và chịu thời tiết khắc nghiệt.",
+      "Ép chắc chắn, bề mặt sáng bóng – chống rỉ sét, bong tróc và chịu thời tiết khắc nghiệt.",
   },
   {
     title: "Biển Số Màu",
     image: bo6,
     description:
-      "Màu vàng tươi đặc trưng, ép thủy lực bền bỉ – không bong, không phai, phù hợp xe dịch vụ và taxi.",
+      "Màu tươi đặc trưng, ép thủy lực bền bỉ – không bong, không phai, phù hợp với các loại xe.",
   },
   {
     title: "Biển Số Inox Phản Quang Siêu Bền",

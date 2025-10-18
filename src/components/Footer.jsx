@@ -39,13 +39,14 @@ export default function Footer() {
           <p className="mt-4 text-xs text-neutral-500 max-w-2xl mx-auto leading-relaxed">
             Ép Biển Số Gia Bảo – Dịch vụ ép biển số ô tô & xe máy cao cấp,  
             sử dụng công nghệ ép thủy lực và mica phản quang bền đẹp theo thời gian.  
-            Giao hàng toàn quốc • Chất lượng – Uy tín – Đẳng cấp.
           </p>
-
+          <p className="text-yellow-400 text-sm font-medium">
+              Chất lượng – Uy tín – Đẳng cấp.
+          </p>
           {/* 👁 Bộ đếm lượt truy cập */}
           <div className="mt-8 flex flex-col items-center gap-2">
             <span className="text-yellow-400 text-sm font-medium">
-              👁 Tổng lượt truy cập
+              Tổng lượt truy cập
             </span>
             <img
               src="https://hitwebcounter.com/counter/counter.php?page=21449238&style=0027&nbdigits=5&type=page&initCount=1000"

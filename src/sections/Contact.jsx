@@ -23,7 +23,7 @@ export default function Contact() {
         <SectionHeader
           kicker="Liên hệ"
           title="ĐẶT ÉP BIỂN SỐ GIA BẢO NGAY HÔM NAY"
-          subtitle="Tư vấn nhanh – Ép biển số bền đẹp – Giao hàng toàn quốc."
+          subtitle="Tư vấn nhanh – Ép biển số bền đẹp – Bảo hành 24 tháng."
         />
 
         <motion.div
@@ -64,8 +64,11 @@ export default function Contact() {
 
           {/* Dòng mô tả nhỏ */}
           <p className="mt-6 text-sm text-gray-400">
-            Ép Biển Số Gia Bảo – Dịch vụ ép biển số ô tô & xe máy cao cấp,  
-            đạt chuẩn quốc tế CE, bền đẹp và sang trọng.
+            Ép Biển Số Gia Bảo – Dịch vụ ép biển số & phục hồi biển số ô tô & xe máy cao cấp,  
+            , bền đẹp và sang trọng.
+          </p>
+          <p className="mt-6 text-sm text-gray-400">
+           Trên 5 cái giảm giá 10% 
           </p>
 
           {/* Hiệu ứng biểu tượng ánh sáng */}
