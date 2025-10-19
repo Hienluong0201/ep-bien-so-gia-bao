@@ -430,7 +430,7 @@ export default function BlogDetail() {
     </p>
     <ul class="list-disc pl-6 text-gray-300">
       <li>Mica phản quang <strong>nhập khẩu chuẩn CE</strong> – bền màu, không giòn, không nứt.</li>
-      <li>Viền <strong>inox 304 sáng gương</strong> – chịu lực tốt, không rỉ sét trong mưa nắng.</li>
+      <li>Viền <strong>inox sáng gương</strong> – chịu lực tốt, không rỉ sét trong mưa nắng.</li>
       <li>Máy ép <strong>thủy lực công nghệ Đức</strong> – đảm bảo bám dính tuyệt đối, không để khe hở.</li>
     </ul><br/>
 

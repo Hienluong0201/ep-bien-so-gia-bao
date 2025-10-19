@@ -38,7 +38,7 @@ export default function Footer() {
           {/* Mô tả */}
           <p className="mt-4 text-xs text-neutral-500 max-w-2xl mx-auto leading-relaxed">
             Ép Biển Số Gia Bảo – Dịch vụ ép biển số ô tô & xe máy cao cấp,
-            sử dụng công nghệ ép thủy lực, mica phản quang chuẩn ISO, viền inox 304 chống nước tuyệt đối.
+            sử dụng công nghệ ép thủy lực, mica phản quang chuẩn ISO, viền inox  chống nước tuyệt đối.
           </p>
 
           <p className="text-yellow-400 text-sm font-medium">
