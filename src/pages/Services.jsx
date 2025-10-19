@@ -23,7 +23,7 @@ export default function Services() {
           <Wrench className="w-12 h-12 text-yellow-400 mb-4" />
           <h2 className="text-2xl font-semibold text-yellow-400 mb-3">Ép Biển Số Xe Máy</h2>
           <p className="text-gray-300 mb-4 leading-relaxed">
-            Sử dụng mica phản quang Nhật, ép viền kín khít bằng máy thủy lực – không đọng nước, không phồng mép. 
+            Sử dụng mica dày 3 li - trong suốt - đạt chuẩn ISO , ép viền kín khít bằng máy thủy lực – không đọng nước, không phồng mép. 
             Đảm bảo bền đẹp 5+ năm, bảo hành 24 tháng.
           </p>
           <a
@@ -41,7 +41,7 @@ export default function Services() {
           <Shield className="w-12 h-12 text-yellow-400 mb-4" />
           <h2 className="text-2xl font-semibold text-yellow-400 mb-3">Ép Biển Số Ô Tô</h2>
           <p className="text-gray-300 mb-4 leading-relaxed">
-            Mica chống tia UV, viền inox sáng gương, ép thủy lực nhập khẩu Đức. 
+            Mica dày 3 li - trong suốt - đạt chuẩn ISO, viền inox sáng gương, ép viền bằng inox nguyên khối cao cấp bằng máy thuỷ lực. 
             Giúp biển số bền màu, sang trọng và chống nước tuyệt đối.
           </p>
           <a
@@ -59,8 +59,8 @@ export default function Services() {
           <RefreshCcw className="w-12 h-12 text-yellow-400 mb-4" />
           <h2 className="text-2xl font-semibold text-yellow-400 mb-3">Phục Hồi Biển Số Cũ</h2>
           <p className="text-gray-300 mb-4 leading-relaxed">
-            Làm sạch – tẩy gỉ – ép lại phản quang và phủ lớp chống tia UV. 
-            Biển cũ trở lại sáng bóng như mới, giữ nguyên số khung, số máy.
+            Làm sạch – tẩy gỉ – làm phản quang - lăn sơn số. 
+            Biển cũ trở lại sáng bóng như mới bền - lâu.
           </p>
           <a
             href="https://zalo.me/0972555038"
@@ -77,7 +77,7 @@ export default function Services() {
           <Paintbrush className="w-12 h-12 text-yellow-400 mb-4" />
           <h2 className="text-2xl font-semibold text-yellow-400 mb-3">Dán Tem cờ - tem logo & Trang Trí</h2>
           <p className="text-gray-300 mb-4 leading-relaxed">
-            Dán tem logo - tem cờ (theo yêu cầu), thẩm mỹ và sang trọng.
+            Dán tem logo - tem cờ (theo yêu cầu), làm nổi bật biển số và xe - thẩm mỹ - sang trọng.
             Tăng độ phản sáng, an toàn khi di chuyển ban đêm.
           </p>
           <a
@@ -110,23 +110,23 @@ export default function Services() {
 
         {/* Gói VIP */}
         <div className="bg-gray-900/80 border border-yellow-500/30 rounded-2xl p-8 shadow-[0_0_25px_rgba(255,215,0,0.15)] hover:shadow-[0_0_40px_rgba(255,215,0,0.35)] transition-all duration-500">
-  <Star className="w-12 h-12 text-yellow-400 mb-4" />
-  <h2 className="text-2xl font-semibold text-yellow-400 mb-3">
-    Gói Chuẩn Meka 3 Ly – Chuẩn ISO
-  </h2>
-  <p className="text-gray-300 mb-4 leading-relaxed">
-    Sử dụng <strong>mica 3 ly cao cấp đạt chuẩn ISO</strong>, ép thủy lực kín mép – 
-    chống nước tuyệt đối. Đảm bảo độ bền, sáng bóng và thẩm mỹ vượt trội cho cả xe máy và ô tô.
-  </p>
-  <a
-    href="https://zalo.me/0972555038"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-block bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg transition-transform hover:scale-105 shadow-[0_0_15px_rgba(255,215,0,0.4)]"
-  >
-    Đặt Gói Chuẩn
-  </a>
-</div>
+          <Star className="w-12 h-12 text-yellow-400 mb-4" />
+          <h2 className="text-2xl font-semibold text-yellow-400 mb-3">
+            Gói Chuẩn Meka 3 Ly – Chuẩn ISO
+          </h2>
+          <p className="text-gray-300 mb-4 leading-relaxed">
+            Sử dụng <strong>mica 3 ly cao cấp đạt chuẩn ISO</strong>, ép thủy lực kín mép – 
+            chống nước tuyệt đối. Đảm bảo độ bền, sáng bóng và thẩm mỹ vượt trội cho cả xe máy và ô tô.
+          </p>
+          <a
+            href="https://zalo.me/0972555038"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg transition-transform hover:scale-105 shadow-[0_0_15px_rgba(255,215,0,0.4)]"
+          >
+            Đặt Gói Chuẩn
+          </a>
+        </div>
 
       </section>
 
@@ -136,7 +136,7 @@ export default function Services() {
           Vì sao khách hàng chọn Ép Biển Số Gia Bảo?
         </h2>
         <ul className="text-gray-300 space-y-3 text-lg leading-relaxed">
-          <li>Công nghệ ép thủy lực & chân không chuẩn Đức – bền 5–10 năm</li>
+          <li>Công nghệ ép thủy lực </li>
           <li>Chất liệu mica, inox, titan cao cấp – sáng bóng & sang trọng</li>
           <li>Bảo hành 12–24 tháng – lỗi 1 đổi 1 ngay tại cửa hàng</li>
           <li>Nhận làm theo yêu cầu: kích thước, viền, tem, logo cá nhân</li>
