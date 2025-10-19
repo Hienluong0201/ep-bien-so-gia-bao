@@ -123,7 +123,7 @@ export default function Location() {
           {/* ⚙️ QUY TRÌNH ÉP BIỂN SỐ */}
           <div className="max-w-5xl mx-auto mb-24">
             <h3 className="text-center text-3xl font-bold text-yellow-400 mb-10">
-              Quy trình ép biển số (8 bước)
+              Quy trình ép biển số (12 bước)
             </h3>
 
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
