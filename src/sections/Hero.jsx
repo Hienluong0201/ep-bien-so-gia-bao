@@ -49,7 +49,7 @@ export default function Hero() {
       >
         {/* Tiêu đề */} 
         <h1 className="text-3xl sm:text-3xl font-extrabold text-yellow-400 mb-5 drop-shadow-[0_0_15px_rgba(255,215,0,0.6)] tracking-wide">
-          ÉP BIỂN SỐ GIA BẢO
+          ÉP BIỂN SỐ GIA BẢO 
         </h1>
 
         {/* Mô tả */}

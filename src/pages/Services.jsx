@@ -11,7 +11,7 @@ export default function Services() {
           DỊCH VỤ ÉP BIỂN SỐ GIA BẢO
         </h1>
         <p className="text-gray-300 max-w-3xl mx-auto text-lg leading-relaxed">
-          Ép Biển Số Gia Bảo – chuyên ép biển số ô tô, xe máy, phục hồi biển cũ, dán tem phản quang & ép viền inox cao cấp.
+          Ép Biển Số Gia Bảo – chuyên ép biển số ô tô, xe máy, phục hồi biển cũ, dán tem cờ - logo & ép viền inox cao cấp.
           Công nghệ ép thủy lực chuẩn Đức – sáng bóng, bền đẹp, chống nước tuyệt đối.
         </p>
       </section>
@@ -75,9 +75,9 @@ export default function Services() {
         {/* Dán tem phản quang */}
         <div className="bg-gray-900/80 border border-yellow-500/30 rounded-2xl p-8 shadow-[0_0_25px_rgba(255,215,0,0.15)] hover:shadow-[0_0_40px_rgba(255,215,0,0.35)] transition-all duration-500">
           <Paintbrush className="w-12 h-12 text-yellow-400 mb-4" />
-          <h2 className="text-2xl font-semibold text-yellow-400 mb-3">Dán Tem Phản Quang & Trang Trí</h2>
+          <h2 className="text-2xl font-semibold text-yellow-400 mb-3">Dán Tem cờ - tem logo & Trang Trí</h2>
           <p className="text-gray-300 mb-4 leading-relaxed">
-            Dán tem phản quang, tem quốc kỳ, tem chữ nổi, tem bảo vệ viền – thẩm mỹ và sang trọng.
+            Dán tem logo - tem cờ (theo yêu cầu), thẩm mỹ và sang trọng.
             Tăng độ phản sáng, an toàn khi di chuyển ban đêm.
           </p>
           <a
@@ -95,7 +95,7 @@ export default function Services() {
           <Sparkles className="w-12 h-12 text-yellow-400 mb-4" />
           <h2 className="text-2xl font-semibold text-yellow-400 mb-3">Ép Viền Inox Cao Cấp</h2>
           <p className="text-gray-300 mb-4 leading-relaxed">
-            Viền inox sáng bóng, ép thủy lực bo khít – chống rỉ sét, 
+            Viền inox nguyên khối cao cấp , ép thủy lực công xuất cao bo khít – chống rỉ sét, 
             bảo vệ biển khỏi va đập, tăng độ sang trọng cho xe.
           </p>
           <a
@@ -110,21 +110,24 @@ export default function Services() {
 
         {/* Gói VIP */}
         <div className="bg-gray-900/80 border border-yellow-500/30 rounded-2xl p-8 shadow-[0_0_25px_rgba(255,215,0,0.15)] hover:shadow-[0_0_40px_rgba(255,215,0,0.35)] transition-all duration-500">
-          <Star className="w-12 h-12 text-yellow-400 mb-4" />
-          <h2 className="text-2xl font-semibold text-yellow-400 mb-3">Gói VIP Tráng Gương</h2>
-          <p className="text-gray-300 mb-4 leading-relaxed">
-            Biển số tráng gương phản quang – viền titan, ép thủy lực kín tuyệt đối. 
-            Dành cho khách hàng yêu thích sự khác biệt, tinh tế và đẳng cấp.
-          </p>
-          <a
-            href="https://zalo.me/0972555038"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg transition-transform hover:scale-105 shadow-[0_0_15px_rgba(255,215,0,0.4)]"
-          >
-            Đặt gói VIP
-          </a>
-        </div>
+  <Star className="w-12 h-12 text-yellow-400 mb-4" />
+  <h2 className="text-2xl font-semibold text-yellow-400 mb-3">
+    Gói Chuẩn Meka 3 Ly – Chuẩn ISO
+  </h2>
+  <p className="text-gray-300 mb-4 leading-relaxed">
+    Sử dụng <strong>mica 3 ly cao cấp đạt chuẩn ISO</strong>, ép thủy lực kín mép – 
+    chống nước tuyệt đối. Đảm bảo độ bền, sáng bóng và thẩm mỹ vượt trội cho cả xe máy và ô tô.
+  </p>
+  <a
+    href="https://zalo.me/0972555038"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg transition-transform hover:scale-105 shadow-[0_0_15px_rgba(255,215,0,0.4)]"
+  >
+    Đặt Gói Chuẩn
+  </a>
+</div>
+
       </section>
 
       {/* 🌟 Ưu điểm */}

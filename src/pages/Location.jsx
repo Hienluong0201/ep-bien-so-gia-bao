@@ -15,6 +15,11 @@ const anhtv5 = "https://i.postimg.cc/k4jfqSyR/anhtv5.png";
 const anhtv6 = "https://i.postimg.cc/rmhQM49D/anhtv6.png";
 const anhtv8 = "https://i.postimg.cc/D0H6bKH3/anhtv8.png";
 const anhtv9 = "https://i.postimg.cc/wxG0rhvQ/anhtv9.png";
+const anhtv10 = "https://i.postimg.cc/RZhrMnqg/anhbuoc1.png";
+const anhtv11 = "https://i.postimg.cc/HLWtGQx1/anhbuo2.png";
+const anhtv12 = "https://i.postimg.cc/P5vjWwhn/anhbuoc5.png";
+const anhtv13 = "https://i.postimg.cc/6qZP7dnb/buoc6.png";
+
 
 export default function Location() {
   const images = [cuahang4, img2];
@@ -129,44 +134,68 @@ export default function Location() {
                   desc: "Trao đổi nhu cầu, chọn kiểu hoàn thiện phù hợp xe và ngân sách.",
                   img: anhtv1,
                 },
-                {
+               {
                   num: 2,
+                  title: "Khò đốt biển số – Làm sạch nền phản quang",
+                  desc: "Dùng đèn khò nhiệt cao để loại bỏ lớp phản quang hư cũ và làm sạch nền kim loại, giúp bề mặt sáng và bám phản quang tốt hơn.",
+                  img: anhtv10,
+                },
+                {
+                  num: 3,
+                  title: "Loại bỏ phản quang cũ đã hư",
+                  desc: "Dùng đèn khò nhiệt cao để loại bỏ lớp phản quang cũ bị bong tróc hoặc ố vàng, giúp bề mặt kim loại sạch và sẵn sàng cho lớp phản quang mới.",
+                  img: anhtv11,
+                },
+                {
+                  num: 4,
+                  title: "Làm phản quang mới",
+                  desc: "Phủ lớp phản quang tiêu chuẩn ISO, ép đều mặt biển để tăng độ sáng, phản sáng mạnh hơn khi đi đêm và đảm bảo độ bền lâu dài.",
+                  img: anhtv12,
+                },
+                {
+                  num: 5,
+                  title: "Lăn sơn cho biển số",
+                  desc: "Sử dụng sơn chuyên dụng giúp nền biển đậm, rõ nét và chống phai màu theo thời gian, đồng thời tăng độ bám cho lớp phản quang bên trên.",
+                  img: anhtv13,
+                },
+                {
+                  num: 4,
                   title: "Vệ sinh & kiểm tra - cắt – canh form",
                   desc: "Làm sạch, cắt khuôn chuẩn, canh lề đúng chuẩn kích thước Việt Nam.",
                   img: anhtv2,
                 },
                 {
-                  num: 3,
+                  num: 5,
                   title: "Ép thuỷ lực",
                   desc: "Ép với mica phản quang, áp lực – nhiệt độ tối ưu, chống bọt.",
                   img: anhtv3,
                 },
                 {
-                  num: 4,
+                  num: 6,
                   title: "Chà Nhám Lần 1 – Tạo Độ Bám",
                   desc: "Làm sạch và chà nhẹ bề mặt kim loại để tạo độ nhám giúp lớp phản quang và keo bám dính chắc chắn hơn.",
                   img: anhtv4,
                 },
                 {
-                  num: 5,
+                  num: 7,
                   title: "Chà Nhám Lần 2 – Làm Mịn Bề Mặt",
                   desc: "Tiếp tục chà tinh để loại bỏ tạp chất, làm phẳng đều toàn bộ mặt biển, đảm bảo độ mịn và độ bám sơn cao nhất.",
                   img: anhtv5,
                 },
                 {
-                  num: 6,
+                  num: 8,
                   title: "Chà Nhám Lần 3 – Hoàn Thiện Trước Khi Ép",
                   desc: "Kiểm tra kỹ toàn bộ bề mặt, chà mịn lại các góc và chi tiết nhỏ trước khi phủ phản quang và ép viền inox.",
                   img: anhtv6,
                 },
                 {
-                  num: 7,
+                  num: 9,
                   title: "Máy Đánh Bóng Bề Mặt",
                   desc: "Sử dụng máy đánh bóng chuyên dụng để làm mịn và sáng đều toàn bộ bề mặt biển, giúp phản quang mạnh và thẩm mỹ cao.",
                   img: anhtv8,
                 },
                 {
-                  num: 8,
+                  num: 10,
                   title: "Hoàn Thiện & Bàn Giao",
                   desc: "Lắp viền inox, kiểm tra chi tiết cuối cùng, vệ sinh sạch và bàn giao cho khách – kèm bảo hành 24 tháng.",
                   img: anhtv9,

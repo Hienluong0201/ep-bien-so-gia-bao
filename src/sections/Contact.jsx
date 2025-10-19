@@ -1,6 +1,6 @@
 import Container from "../components/Container";
 import SectionHeader from "../components/SectionHeader";
-import { Phone, Sparkles } from "lucide-react";
+import { Phone, Sparkles,MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Contact() {
@@ -34,22 +34,36 @@ export default function Contact() {
           className="mx-auto max-w-xl mt-10 bg-neutral-900/60 border border-yellow-400/30 rounded-2xl p-10 backdrop-blur-sm shadow-[0_0_30px_rgba(255,215,0,0.2)]"
         >
           {/* Nút Liên hệ */}
-          <motion.a
-            href="https://zalo.me/0972555038"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.98 }}
-            className="relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-500 text-black font-semibold px-10 py-4 rounded-full shadow-[0_0_20px_rgba(255,215,0,0.4)] transition-all duration-300 overflow-hidden"
-          >
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
-              animate={{ x: ["-100%", "100%"] }}
-              transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
-            />
-            <Phone className="h-5 w-5 relative z-10" />
-            <span className="relative z-10">Liên hệ qua Zalo</span>
-          </motion.a>
+        <div className="flex flex-wrap justify-center gap-6 mt-6">
+  <motion.a
+    href="https://zalo.me/0972555038"
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.98 }}
+    className="relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-500 text-black font-semibold px-10 py-4 rounded-full shadow-[0_0_20px_rgba(255,215,0,0.4)] transition-all duration-300 overflow-hidden"
+  >
+    <motion.div
+      className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
+      animate={{ x: ["-100%", "100%"] }}
+      transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
+    />
+    <Phone className="h-5 w-5 relative z-10" />
+    <span className="relative z-10">Liên hệ qua Zalo</span>
+  </motion.a>
+
+  <a
+    href="https://maps.app.goo.gl/HmmvBzhv1wqKaJtBA"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-3 bg-gradient-to-r from-yellow-500 to-yellow-400 
+               text-black px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 
+               transition-transform shadow-[0_0_25px_rgba(255,215,0,0.5)]"
+  >
+    <MapPin className="w-6 h-6" />
+    Xem bản đồ chỉ đường
+  </a>
+</div>
 
           {/* Hotline */}
           <p className="mt-6 text-base text-yellow-300">
