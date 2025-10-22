@@ -2,45 +2,96 @@
 <urlset
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
 >
-  <!-- Trang chủ -->
+
   <url>
     <loc>https://epbiensogiabao.com/</loc>
     <priority>1.0</priority>
     <changefreq>daily</changefreq>
+    <lastmod>2025-10-18</lastmod>
+    <image:image>
+      <image:loc>https://epbiensogiabao.com/logo.png</image:loc>
+      <image:caption>Ép Biển Số Gia Bảo</image:caption>
+    </image:image>
   </url>
 
-  <!-- Trang dịch vụ -->
+
+  <url>
+    <loc>https://epbiensogiabao.com/cua-hang</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+    <lastmod>2025-10-18</lastmod>
+    <image:image>
+      <image:loc>https://epbiensogiabao.com/cuahang4.jpg</image:loc>
+      <image:caption>Cửa hàng Ép Biển Số Gia Bảo</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ⚙️ Trang Dịch vụ -->
   <url>
     <loc>https://epbiensogiabao.com/dich-vu</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
+    <lastmod>2025-10-18</lastmod>
   </url>
 
-  <!-- Trang cửa hàng -->
+
   <url>
     <loc>https://epbiensogiabao.com/location</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
+    <lastmod>2025-10-18</lastmod>
   </url>
 
-  <!-- Trang tin tức -->
   <url>
     <loc>https://epbiensogiabao.com/tin-tuc</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
-  </url>
-
-  <!-- Bài viết trong trang tin tức -->
-  <url>
-    <loc>https://epbiensogiabao.com/tin-tuc/ep-bien-so-mica</loc>
-    <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-10-18</lastmod>
   </url>
 
   <url>
-    <loc>https://epbiensogiabao.com/tin-tuc/mica-kem-chat-luong</loc>
+    <loc>https://epbiensogiabao.com/tin-tuc/ep-bien-xe-may-mica</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
+    <lastmod>2025-10-18</lastmod>
   </url>
+
+  <url>
+    <loc>https://epbiensogiabao.com/tin-tuc/ep-bien-oto</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2025-10-18</lastmod>
+  </url>
+
+  <url>
+    <loc>https://epbiensogiabao.com/tin-tuc/phuc-hoi-bien-so-cu</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2025-10-18</lastmod>
+  </url>
+
+  <url>
+    <loc>https://epbiensogiabao.com/tin-tuc/dan-tem-phan-quang</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2025-10-18</lastmod>
+  </url>
+
+  <url>
+    <loc>https://epbiensogiabao.com/tin-tuc/bao-hanh-ep-bien</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2025-10-18</lastmod>
+  </url>
+
+
+  <url>
+    <loc>https://epbiensogiabao.com/logo.png</loc>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2025-10-18</lastmod>
+  </url>
+
 </urlset>
